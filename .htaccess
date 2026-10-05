@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=verifycaptcha:off,E=verifybrowser:off,E=nocheck:1]
+</IfModule>
