@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Add or Edit Safari Package
     if ($action === 'save_package') {
         $title       = trim($_POST['title']);
-        $catId       = (int)$_POST['category_id'];
+        $catid = $_POST['category_id'] ?? null;
         $code        = trim($_POST['package_code']);
         $days        = (int)$_POST['days'];
         $nights      = (int)$_POST['nights'];
